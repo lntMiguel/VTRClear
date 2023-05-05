@@ -1,0 +1,391 @@
+html{
+  height: 100%;
+  width: 100%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  color: white;
+  font-family: Cambria, Calibri, Arial, Helvetica;
+  margin: 0;
+  padding: 10px 50px 50px 50px;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  pointer-events: none;
+  user-select:none;
+  
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+  background-color: #0D0B0B;
+  
+}
+
+.menu a{
+  padding: 14px;
+  text-decoration: none;
+  color: white;
+  transition: background-color .50s;
+}
+
+.menu a:hover{
+  background-color: #191a1a;
+  transition: background-color .5s;
+}
+
+h1,h3{
+  margin: 0;
+}
+
+h1{
+  font-size: 25px;
+}
+
+.card{
+  background-color: #0D0B0B;
+  padding:20px;
+  margin:20px 0 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.servico{
+  text-align: center;
+  padding: 10px;
+  transition: box-shadow .5s;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.servico img{
+  height: 300px;
+  margin-top: 5px;
+  width: 200px;
+  border-radius: 5%;
+  user-select:none;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+}
+
+.servico:hover{
+  box-shadow: 5px 10px 15px gray;
+  user-select:none;
+}
+
+article{
+  width: 75%;
+  float: left;  
+}
+
+aside{
+  width: 25%;
+  float: right;
+  padding-left: 25px;
+  padding-top: 50px;
+}
+
+#adSobreNos{
+  background-image: url('imagens/sobreNosAd.gif') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #E1ECEC;
+  text-align: center;
+  height: 13em;
+  user-select:none;
+}
+
+.adLavagem img{
+  width: 277px;
+}
+
+.social{
+  display: flex;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: box-shadow .5s;
+  border-radius: 10px; 
+  justify-content: center;
+  flex-wrap: wrap;
+  user-select:none;
+  align-items: center;
+}
+
+.social:hover{
+  box-shadow: 0 0 20px #888888;
+}
+
+.social img{
+  margin: 10px;
+  opacity: .5;
+  transition: opacity .5s;
+}
+
+.social img:hover{
+  opacity: 1;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#textoSobre{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+.wpp{
+  text-decoration: none;
+  color: green;
+}
+
+#numero{
+  color: gold;
+}
+
+.higienizacao{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+
+#sobreImg img{
+  height: 400px;
+  width: 440px;
+  user-select:none;
+  border-radius: 5%;  
+}
+
+.perfil{
+  display: flex;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: box-shadow .5s;
+  border-radius: 10px; 
+  flex-wrap: wrap;
+  user-select:none;
+  align-items: center;
+  justify-content: center;
+  }
+
+.perfil:hover{
+  box-shadow: 0 0 20px #888888;
+}
+
+.perfil img{
+  border-radius: 50%;  
+  width: 100px;
+  height: 100px;
+  margin: 15px;
+}
+
+#imagemHigiene img{
+  border-radius: 5%;
+  width: 400px;
+  height: 300px;
+}
+.configBackground{
+  height: 300px;
+  margin-top: 5px;
+  width: 200px;
+  border-radius: 5%;
+  user-select:none;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.configBackground:hover{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#limpezaI{
+  background-image: url('imagens/corsaAntes.jpeg');
+}
+#limpezaI:hover{
+  background-image: url('imagens/corsaDepois.gif');
+}
+
+#limpezaE{
+  background-image: url('imagens/limpezaE1.png');
+}
+
+#limpezaE:hover{
+  background-image: url('imagens/limpezaE2.png');
+
+}
+
+#sofaLimpeza{
+  background-image: url('imagens/sofáAntes.png');
+}
+
+#sofaLimpeza:hover{
+  background-image: url('imagens/sofáDepois.png');
+}
+
+#sofaHigiene{
+  background-image: url('imagens/sofá2Antes.png');
+}
+
+#sofaHigiene:hover{
+  background-image: url('imagens/sofá2Depois.png');
+}
+
+#colchaoLimpeza{
+  background-image: url('imagens/colchaoAntes.png');
+}
+
+#colchaoLimpeza:hover{
+  background-image: url('imagens/colchaoDepois.png');
+}
+
+#colchaoHigiene{
+  background-image: url('imagens/colchao2Antes.png');
+}
+
+#colchaoHigiene:hover{
+  background-image: url('imagens/colchao2Depois.png');
+}
+
+.tipo{
+  width: 250px;
+  height: 250px;
+  margin-top: 10px;
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 20px;
+  padding: 10px;
+  transition: all 0.5s;
+}
+
+.tipo img{
+  width: 200px;
+  height: 200px;
+}
+
+.tipo:hover{
+   -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+ul{
+  list-style: none;
+}
+
+.atendimento {
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  height: 100px;
+  width: 300px;
+}
+
+.atendimento img{
+  position: absolute;
+  right:10px;
+  border-radius: 50%;
+}
+
+.tel{
+  background-color: black;
+  color:white;
+  height: 60px;
+  border-radius: 16px;
+  left: 16px;
+  margin-top: 20px;
+  padding: 10px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.tel p{
+  margin: 0; 
+}
+
+.atendimento a{
+  text-decoration:none;
+}
+
+.atendimento img:hover + .tel{
+  opacity: 1;
+}
+
+li p{
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px){
+  body{
+    padding: 5px 25px 25px 25px;
+  }
+  article{
+    width: 60%;
+  }
+  aside{
+    width: 40%;
+    float: right;
+    padding-left: 10px;
+    padding-top: 50px;
+}
+  
+  #adSobreNos{
+  height: 10em;
+  width: 290px;
+}
+  .adLavagem img{
+    width: 290px;
+}
+  
+  .redesSociais{
+    width: 290px;
+  }
+
+  #sobreImg img{
+    width: 300px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .menu a {
+    display:block;
+    width: 100%;
+  }
+  .menu {
+    display:block;
+    width: 100%;
+  }
+  aside{
+    width: 100%;
+  }
+  article{
+  width: 100%;
+  }
+}
